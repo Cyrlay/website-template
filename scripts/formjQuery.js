@@ -19,6 +19,10 @@ const prepareDOMEvents = () => {
     $('.btn-add').click(() => {
         console.log('ok')
     })
+
+    $('.burger').click(() => {
+        handleNav()
+    })
 }
 
 const showLoginPopUp = () => {
@@ -55,6 +59,12 @@ const checkURL = () => {
     } else {
         return null
     }
+}
+
+const handleNav = () => {
+    $('.nav-bar').toggle('show').attr('style','display: flex !important')
+    $('.fa-times').toggle('hide')
+    $('.fa-bars').toggle('hide')
 }
 
 $(document).ready(main)

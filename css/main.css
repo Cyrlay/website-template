@@ -67,11 +67,38 @@ body {
     padding: 6.5px 25px 6.5px 26px;
 }
 
+.burger {
+    display: none;
+    padding: 10px 20px;
+    font-size: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    transition: transform .3s;
+}
+
+.active {
+    transform: translateX(350px);
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex !important;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+
+.nav-bar {
+    display: flex !important;
 }
 
 li {
@@ -1195,7 +1222,7 @@ li a:hover {
     }
 
     .nav-bar {
-        display: flex;
+        display: flex !important;
     }
 
     #nav-start, #nav-how-it-works, #nav-price-list, #nav-login, #nav-register {
@@ -1312,6 +1339,12 @@ li a:hover {
         height: auto;
     }
 
+    .burger {
+        display: flex;
+        justify-content: end;
+        margin: 15px 0 0 0;
+    }
+
     #nav {
         width: auto;
         height: auto;
@@ -1321,7 +1354,7 @@ li a:hover {
     }
 
     .nav-bar {
-        display: flex;
+        display: none !important;
         flex-direction: column;
     }
 
@@ -1330,7 +1363,7 @@ li a:hover {
     }
 
     #nav-start {
-        margin-top: 25px;
+        margin-top: 5px;
     }
 
     #nav-separator {
