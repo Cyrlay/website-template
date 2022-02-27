@@ -799,6 +799,7 @@ li a:hover {
 }
 
 .register {
+    font-family: Montserrat, serif;
     min-width: 180px;
     min-height: 40px;
     background: linear-gradient(180deg, #F3A300 0%, #F07A13 100%);
@@ -821,6 +822,7 @@ li a:hover {
 }
 
 .login {
+    font-family: Montserrat, serif;
     min-width: 180px;
     min-height: 40px;
     background: none;
